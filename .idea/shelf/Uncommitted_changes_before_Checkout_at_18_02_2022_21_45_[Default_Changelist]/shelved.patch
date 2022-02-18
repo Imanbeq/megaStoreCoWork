@@ -1,0 +1,92 @@
+Index: index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!doctype html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\"\r\n          content=\"width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>CoWork</title>\r\n</head>\r\n<body>\r\n\r\n</body>\r\n</html>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- index.html	(revision 7daa08a9c751a0af844dd8e25144ec8b7dfce128)
++++ index.html	(date 1645199020956)
+@@ -6,8 +6,80 @@
+           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>CoWork</title>
++    <link rel="stylesheet" href="bootstrap.min.css">
+ </head>
+ <body>
+-
++<div class="passport">
++    <label class="font-monospace fs-5">Данные о ваших доходах</label>
++    <form class="row w-50">
++        <div class="col-4 p-2">
++            <label>Организация</label><br>
++            <input type="text" class="form-control" placeholder="MegaCom">
++        </div>
++        <div class="col-8 p-2">
++            <label>Должность</label><br>
++            <input type="text" class="form-control" placeholder="Ведущий бухгалтер">
++        </div>
++        <div class="col-6 p-2">
++            <label>Заработная плата в месяц</label><br>
++            <input type="text" class="form-control">
++        </div>
++        <div class="col-6 p-2">
++            <label>Заработная Плата за послю 3 месяца</label>
++            <input type="text" class="form-control">
++        </div>
++    <label class="font-monospace fs-5">Сведение о кредите</label>
++    </form>
++    <form class="row w-50">
++        <div class="col-12 p-2">
++            <label>Покупка телефона (наименование товара)</label>
++            <input type="text" class="form-control" placeholder="IPhone XS 256Gb">
++        </div>
++        <div class="col-4 p-2">
++            <label>Стоимость товара</label>
++            <input type="text" class="form-control" placeholder="65 000 сом">
++        </div>
++        <div class="col-4 p-2">
++            <label>Количество товара</label>
++            <input type="text" class="form-control" placeholder="1шт">
++        </div>
++        <div class="col-4 p-2">
++            <label>Итого сумма кредита</label>
++            <input type="text" class="form-control" placeholder="65 000 сом">
++        </div>
++        <div class="col-4 p-2">
++            <label>Вид кредита</label><br>
++            <select class="col-4 p-2 form-control">
++                <option value="" hidden>кредит/рассрочка</option>
++                <option value="1">Потребительский</option>
++                <option value="2">Ипотечный</option>
++            </select>
++        </div>
++        <div class="col-4 p-2">
++            <label>Срок кредита(мес)</label><br>
++            <select class="col-4 p-2 form-control">
++                <option value="" hidden>мин 3 месяца</option>
++                <option value="1">Месяц</option>
++                <option value="2">2 месяца</option>
++                <option value="3">3 месяца</option>
++                <option value="4">4 месяца</option>
++                <option value="5">5 месяца</option>
++                <option value="6">6 месяца</option>
++            </select>
++        </div>
++        <div class="col-4 p-2">
++            <label>Точка получения товара</label><br>
++            <select class="col-4 p-2 form-control">
++                <option value="" hidden>Выберите адрес</option>
++                <option value="1">Рыскулова 12</option>
++                <option value="2">Московская 45</option>
++                <option value="3">Суюнбаева 34</option>
++            </select>
++        </div>
++        <div class="col-8 p-2 ms-5">
++            <button type="button" class="form-control bg-dark text-light">Оформит заявку</button>
++        </div>
++    </form>
++</div>
+ </body>
+ </html>
+\ No newline at end of file

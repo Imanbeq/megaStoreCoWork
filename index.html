@@ -14,65 +14,85 @@
 
     <form class=" d-grid gap-3  py-5 px-4" style="width: 750px; height: auto;">
         <h5>Анкета корпоративных клиентов</h5>
+        <h6>Личнные данные</h6>
         <div class="row">
-            <label for="private_s">Личнные данные</label>
             <div class="col" id="private_s">
+                <label for="private_s">Фамилия</label>
                 <input type="text" class="form-control"  placeholder="Фамилия">
             </div>
-            <div class="col">
+
+            <div class="col" id="private_n">
+                <label for="private_n">Имя</label>
                 <input type="text" class="form-control" placeholder="Имя">
             </div>
-            <div class="col">
+
+            <div class="col" id="private_sn">
+                <label for="private_sn">Отчество</label>
                 <input type="text" class="form-control" placeholder="Отчество">
             </div>
         </div>
 
         <div class="row">
-            <label for="pasport">Паспотрные данные</label>
-            <div class="col-3" id="pasport">
-                <input type="text" class="form-control"  placeholder="Дата рождения">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Место проживания по прописке">
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control"  placeholder="Серийный номер AN/ID">
+            <div class="col-4" id="dataBirth">
+                <label for="dataBirth">Дата рождения</label>
+                <div class="input-group">
+                    <input type="text" class="form-control"  placeholder="12.12.2021">
+                    <div class="input-group-text bg-light"><img src="calendar.svg" alt=""></div>
+                </div>
             </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="ИНН">
-            </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Дата получения">
+
+            <div class="col" id="placeFact">
+                <label for="placeFact">Фактическое место проживания</label>
+                <input type="text" class="form-control" placeholder="Бишкек, Чокморова 23/3, кв.5">
             </div>
         </div>
 
         <div class="row">
             <div class="col-4">
-                <input type="text" class="form-control"  placeholder="Контакный номер">
+                <input type="text" class="form-control"  placeholder="+996 555 000 000">
             </div>
             <div class="col-4">
-                <input type="text" class="form-control" placeholder="Электронный адрес">
+                <input type="text" class="form-control" placeholder="adamjenson@gmail.com">
             </div>
-            <div class="col-4">
+
+         </div>
+
+        <h6>Паспортные данные</h6>
+        <div class="row">
+            <div class="col" id="sNumber">
+                <label for="sNumber">Серийный номер AN/ID</label>
+                <input type="text" class="form-control"  placeholder="AN1234567">
+            </div>
+            <div class="col" id="inn">
+                <label for="inn">Инн</label>
+                <input type="text" class="form-control" placeholder="1234567898765">
+            </div>
+            <div class="col" id="dataReceive">
+                <label for="dataReceive">Дата получения</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="12.12.2020">
+                    <div class="input-group-text bg-light"><img src="calendar.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-4" id="bank">
+                <label for="bank">Наименование банка</label>
                 <select class="form-select">
-                    <option selected>Наименнование банка...</option>
+                    <option selected>Выберите банк</option>
                     <option>...</option>
                 </select>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-8">
-                <input type="text" class="form-control" placeholder="Фактическое место проживания">
+            <div class="col-8" id="placeLive">
+                <label for="placeLive">Место проживания по прописке</label>
+                <input type="text" class="form-control" placeholder="Бишкек, Чокморова 23/3, кв.5">
             </div>
         </div>
 
-        <div class="row text-center">
-            <div class="col"><a class="btn btn-dark btn-lg text-center" style="width:300px" href="form1.html" role="button">Далее</a></div>
-        </div>
 
     </form>
 </div>

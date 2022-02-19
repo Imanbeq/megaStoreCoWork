@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="container d-flex justify-content-center align-items-center" style="width: 100%; height: 100vh">
+<div class="container d-flex justify-content-center align-items-center" style="width: 100%; height: 100%">
 
     <form class=" d-grid gap-3  py-5 px-4" style="width: 750px; height: auto;">
         <h5>Анкета корпоративных клиентов</h5>
@@ -93,6 +93,76 @@
             </div>
         </div>
 
+        <h6>Данные о ваших доходах</h6>
+        <div class="row">
+            <div class="col-4">
+                <label>Организация</label>
+                <input type="text" class="form-control"  placeholder="MegaCom">
+            </div>
+
+            <div class="col-8">
+                <label>Должность</label>
+                <input type="text" class="form-control" placeholder="Ведуший бухгалтер">
+            </div>
+
+            <div class="col-6">
+                <label>Заработная плата в месяц</label>
+                <input type="text" class="form-control">
+            </div>
+            <div class="col-6">
+                <label>Заработная плата за посл. 3 месяца</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+
+        <h6>Сведения о кредите</h6>
+        <div class="row">
+            <div class="col-12">
+                <label>Покупка телефона(наименование товара)</label>
+                <input type="text" class="form-control"  placeholder="IPhone XS 256 Gb">
+            </div>
+            <div class="col-4">
+                <label>Стоимость товара</label>
+                <input type="text" class="form-control" placeholder="65000 сом">
+            </div>
+            <div class="col-4">
+                <label>Количество товара</label>
+                <input type="text" class="form-control" placeholder="1шт">
+            </div>
+            <div class="col-4">
+                <label>Итого сумма кредита</label>
+                <input type="text" class="form-control" placeholder="65000 сом">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <label>Вид кредита</label>
+                <select class="form-select">
+                    <option selected>кредит/рассрочка</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label>Срок кредита(мес)</label>
+                <select class="form-select">
+                    <option selected>мин. 3 месяца</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label>Точка получения товара</label>
+                <select class="form-select">
+                    <option selected>Выберите адрес</option>
+                    <option>...</option>
+                </select>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <input type="button" class="form-control bg-dark text-light" value="Оформить заявку">
+            </div>
+        </div>
 
     </form>
 </div>
